@@ -17,7 +17,7 @@ func main () {
 	})
 	go func() {
 		for {
-			histogram.Observe(rand.Float32() * 5.0)
+			histogram.Observe(rand.Float64() * 5.0)
 			time.Sleep(1 * time.Second)	
 		}
 	}()
